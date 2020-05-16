@@ -161,9 +161,9 @@ def main():
             os.makedirs(args.image_dir)
 
     for iv,v in enumerate(video_filenames):
-        if not os.path.exists(args.image_dir+'/'+v[11:-4]+'/'):
-            os.makedirs(args.image_dir+'/'+v[11:-4]+'/')
-        video2frame(v,args.image_dir+'/'+v[11:-4]+'/')
+        if not os.path.exists(args.image_dir+'/'+v[10:-4]+'/'):
+            os.makedirs(args.image_dir+'/'+v[10:-4]+'/')
+        video2frame(v,args.image_dir+'/'+v[10:-4]+'/')
 
         if args.output_dir:
           if not os.path.exists(args.output_dir+'/'+v[11:-4]+'/'):
